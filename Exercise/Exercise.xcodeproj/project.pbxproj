@@ -18,7 +18,6 @@
 		39AD45271CDAE1E800642308 /* photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 39AD45261CDAE1E800642308 /* photo.jpg */; };
 		39AD45291CDAE1ED00642308 /* live.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 39AD45281CDAE1ED00642308 /* live.jpg */; };
 		39AD452B1CDAE1F100642308 /* video.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 39AD452A1CDAE1F100642308 /* video.jpg */; };
-		39AD45331CDAE96700642308 /* LiveCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AD45321CDAE96700642308 /* LiveCollectionViewController.swift */; };
 		39AD45361CDAE9C200642308 /* LiveCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AD45341CDAE9C200642308 /* LiveCollectionViewCell.swift */; };
 		39AD45371CDAE9C200642308 /* LiveCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39AD45351CDAE9C200642308 /* LiveCollectionViewCell.xib */; };
 		3EB0F3E41CDAE44700239E9E /* DynamicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB0F3E21CDAE44700239E9E /* DynamicTableViewCell.swift */; };
@@ -60,10 +59,8 @@
 		39AD45261CDAE1E800642308 /* photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo.jpg; sourceTree = "<group>"; };
 		39AD45281CDAE1ED00642308 /* live.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = live.jpg; sourceTree = "<group>"; };
 		39AD452A1CDAE1F100642308 /* video.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = video.jpg; sourceTree = "<group>"; };
-		39AD45321CDAE96700642308 /* LiveCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveCollectionViewController.swift; sourceTree = "<group>"; };
 		39AD45341CDAE9C200642308 /* LiveCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveCollectionViewCell.swift; sourceTree = "<group>"; };
 		39AD45351CDAE9C200642308 /* LiveCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LiveCollectionViewCell.xib; sourceTree = "<group>"; };
-
 		3EB0F3E21CDAE44700239E9E /* DynamicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicTableViewCell.swift; sourceTree = "<group>"; };
 		3EB0F3E31CDAE44700239E9E /* DynamicTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DynamicTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,14 +115,12 @@
 			children = (
 				39AD44F61CDAD6D900642308 /* AppDelegate.swift */,
 				39AD44F81CDAD6D900642308 /* ViewController.swift */,
-				39AD45321CDAE96700642308 /* LiveCollectionViewController.swift */,
 				39AD45341CDAE9C200642308 /* LiveCollectionViewCell.swift */,
 				39AD45351CDAE9C200642308 /* LiveCollectionViewCell.xib */,
 				39AD45241CDAD7C500642308 /* TabBarViewController.swift */,
 				39AD45261CDAE1E800642308 /* photo.jpg */,
 				39AD45281CDAE1ED00642308 /* live.jpg */,
 				39AD452A1CDAE1F100642308 /* video.jpg */,
-
 				3EB0F3E21CDAE44700239E9E /* DynamicTableViewCell.swift */,
 				3EB0F3E31CDAE44700239E9E /* DynamicTableViewCell.xib */,
 				39AD44FA1CDAD6D900642308 /* Main.storyboard */,
@@ -289,7 +284,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39AD45331CDAE96700642308 /* LiveCollectionViewController.swift in Sources */,
 				39AD45361CDAE9C200642308 /* LiveCollectionViewCell.swift in Sources */,
 				39AD44F91CDAD6D900642308 /* ViewController.swift in Sources */,
 				3EB0F3E41CDAE44700239E9E /* DynamicTableViewCell.swift in Sources */,

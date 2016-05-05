@@ -7,7 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="gTV-IL-0wX" customClass="LiveCollectionViewCell" customModule="Exercise" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.40000000000000002" contentMode="center" reuseIdentifier="Cell" id="gTV-IL-0wX" customClass="LiveCollectionViewCell" customModule="Exercise" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -48,7 +48,7 @@
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
-            <color key="backgroundColor" red="0.37254901960784315" green="0.37254901960784315" blue="0.37254901960784315" alpha="0.32809729609929089" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="0.97360306978225708" green="0.92957955598831177" blue="0.91242587566375732" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <size key="customSize" width="144" height="182"/>
             <point key="canvasLocation" x="302" y="362"/>
         </collectionViewCell>
