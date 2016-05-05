@@ -54,13 +54,14 @@ class ViewController: UIViewController, UITableViewDataSource, UICollectionViewD
         self.view.addGestureRecognizer(swipeGesture)
         self.title = "同城"
         let layout = UICollectionViewFlowLayout.init()
-        layout.itemSize = CGSize(width: 200, height: 300)
+        layout.itemSize = CGSize(width: self.view.frame.size.width/2-5, height: self.view.frame.size.width*0.75)
         layout.scrollDirection = .Vertical
-        collection = UICollectionView(frame: self.tableView.frame, collectionViewLayout: layout)
+        collection = UICollectionView(frame:CGRectMake(0, 64, UIScreen.mainScreen().bounds.size.width, UIScreen.mainScreen().bounds.size.height-110), collectionViewLayout: layout)
         
         collection!.delegate = self
         collection!.dataSource = self
         collection!.registerNib(UINib(nibName: "LiveCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: reuseIdentifier)
+
         
         rightBtn.tag = 1
 
