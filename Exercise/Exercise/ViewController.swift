@@ -73,25 +73,32 @@ class ViewController: UIViewController, UITableViewDataSource, UICollectionViewD
     
     
     @IBAction func presentLeftView(sender: AnyObject) {
+        LeftView.beginAnimations(nil, context: nil)
+        LeftView.setAnimationDuration(0.5)
+
+        if tag == 2 {
+            leftView.center = CGPointMake(90, self.view.frame.size.height/2)
+            collection!.center = CGPointMake(self.view.frame.size.width/2 + 180, self.view.frame.size.height/2)
+            if self.leftBtn.tag % 2 == 1 {
+                leftView.center = CGPointMake(-90, self.view.frame.size.height/2)
+                collection!.center = CGPointMake(self.view.frame.size.width/2, self.view.frame.size.height/2)
+            }
+
+        } else {
 
         if self.leftBtn.tag % 2 == 0 {
-            LeftView.beginAnimations(nil, context: nil)
-            LeftView.setAnimationDuration(0.5)
             leftView.center = CGPointMake(90, self.view.frame.size.height/2)
             self.tableView.center = CGPointMake(self.view.frame.size.width/2 + 180, self.view.frame.size.height/2)
-            LeftView.setAnimationCurve(UIViewAnimationCurve.EaseOut)
-            LeftView.commitAnimations()
             
         } else {
-            LeftView.beginAnimations(nil, context: nil)
-            LeftView.setAnimationDuration(0.5)
-            leftView.center = CGPointMake(-90, self.view.frame.size.height/2)
+              leftView.center = CGPointMake(-90, self.view.frame.size.height/2)
             self.tableView.center = CGPointMake(self.view.frame.size.width/2, self.view.frame.size.height/2)
-            LeftView.setAnimationCurve(UIViewAnimationCurve.EaseOut)
-            LeftView.commitAnimations()
-
+ 
         }
-        
+    }
+        LeftView.setAnimationCurve(UIViewAnimationCurve.EaseOut)
+        LeftView.commitAnimations()
+
         self.leftBtn.tag = self.leftBtn.tag + 1
         
 
@@ -104,9 +111,17 @@ class ViewController: UIViewController, UITableViewDataSource, UICollectionViewD
         LeftView.beginAnimations(nil, context: nil)
         LeftView.setAnimationDuration(1.0)
         leftView.center = CGPointMake(-90, self.view.frame.size.height/2)
+
+
+        if tag == 2 {
+            collection!.center = CGPointMake(self.view.frame.size.width/2, self.view.frame.size.height/2)
+        } else {
         self.tableView.center = CGPointMake(self.view.frame.size.width/2, self.view.frame.size.height/2)
+        }
         LeftView.setAnimationCurve(UIViewAnimationCurve.EaseOut)
         LeftView.commitAnimations()
+        self.leftBtn.tag = self.leftBtn.tag + 1
+
     }
 
 

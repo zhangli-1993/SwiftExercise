@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MLa-WY-Khk">
-                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="8w4-tV-Jtl"/>
@@ -28,10 +28,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="MLa-WY-Khk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="4mU-Hn-N8g"/>
-                            <constraint firstItem="MLa-WY-Khk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="j7G-qq-DLM"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="MLa-WY-Khk" secondAttribute="trailing" constant="-20" id="nKC-lM-PHm"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MLa-WY-Khk" secondAttribute="bottom" id="pXy-RK-XoC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MLa-WY-Khk" secondAttribute="bottom" id="2p6-uY-PD3"/>
+                            <constraint firstItem="MLa-WY-Khk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="jRb-0a-HCe"/>
+                            <constraint firstItem="MLa-WY-Khk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="jhQ-ly-YJO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MLa-WY-Khk" secondAttribute="trailing" constant="-20" id="ptM-Km-mPM"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="a64-Ls-f0N">
