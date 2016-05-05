@@ -22,6 +22,7 @@
 		39AD45371CDAE9C200642308 /* LiveCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39AD45351CDAE9C200642308 /* LiveCollectionViewCell.xib */; };
 		3EB0F3E41CDAE44700239E9E /* DynamicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB0F3E21CDAE44700239E9E /* DynamicTableViewCell.swift */; };
 		3EB0F3E51CDAE44700239E9E /* DynamicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EB0F3E31CDAE44700239E9E /* DynamicTableViewCell.xib */; };
+		3EB0F3E71CDAF09200239E9E /* LeftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB0F3E61CDAF09200239E9E /* LeftView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		39AD45351CDAE9C200642308 /* LiveCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LiveCollectionViewCell.xib; sourceTree = "<group>"; };
 		3EB0F3E21CDAE44700239E9E /* DynamicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicTableViewCell.swift; sourceTree = "<group>"; };
 		3EB0F3E31CDAE44700239E9E /* DynamicTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DynamicTableViewCell.xib; sourceTree = "<group>"; };
+		3EB0F3E61CDAF09200239E9E /* LeftView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			children = (
 				39AD44F61CDAD6D900642308 /* AppDelegate.swift */,
 				39AD44F81CDAD6D900642308 /* ViewController.swift */,
+				3EB0F3E61CDAF09200239E9E /* LeftView.swift */,
 				39AD45341CDAE9C200642308 /* LiveCollectionViewCell.swift */,
 				39AD45351CDAE9C200642308 /* LiveCollectionViewCell.xib */,
 				39AD45241CDAD7C500642308 /* TabBarViewController.swift */,
@@ -288,6 +291,7 @@
 				39AD44F91CDAD6D900642308 /* ViewController.swift in Sources */,
 				3EB0F3E41CDAE44700239E9E /* DynamicTableViewCell.swift in Sources */,
 				39AD45251CDAD7C500642308 /* TabBarViewController.swift in Sources */,
+				3EB0F3E71CDAF09200239E9E /* LeftView.swift in Sources */,
 				39AD44F71CDAD6D900642308 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
