@@ -14,7 +14,6 @@ class LeftView: UIView {
     
     let array = ["附近", "同城", "全国", "关注"]
     
-    
  
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         return 4
