@@ -52,7 +52,6 @@ class ViewController: UIViewController, UITableViewDataSource, UICollectionViewD
         collection!.dataSource = self
         collection!.registerNib(UINib(nibName: "LiveCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: reuseIdentifier)
 
-        rightBtn.tag = 1
         // Do any additional setup after loading the view, typically from a nib.
     }
 

@@ -10,11 +10,15 @@ import UIKit
 
 class TabBarViewController: UITabBarController {
 var blackView = UIView()
+    var liveBtn : UIButton?
+    var photoBtn : UIButton?
+    var videoBtn : UIButton?
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.addCenterButton(btnimage: UIImage(named: "图片")!,  selector: "addOrderView", view: self.view)
-
+        blackView.frame = CGRectMake(0, UIScreen.mainScreen().bounds.size.height, UIScreen.mainScreen().bounds.size.width, UIScreen.mainScreen().bounds.size.height-108)
+        blackView.backgroundColor = UIColor(red: 95/265.0, green: 95/265.0, blue: 95/265.0, alpha: 0.8)
         // Do any additional setup after loading the view.
     }
     func addCenterButton(btnimage buttonImage:UIImage,selector:String,view:UIView)
@@ -46,36 +50,45 @@ var blackView = UIView()
     //按钮方法
     func addOrderView()
     {
-        blackView.frame = self.view.frame
+        
         blackView.backgroundColor = UIColor(red: 95/265.0, green: 95/265.0, blue: 95/265.0, alpha: 0.8)
-        let photoBtn = UIButton(type: .Custom)
-        photoBtn.frame = CGRectMake(80, 200, 100, 100)
-        photoBtn.setBackgroundImage(UIImage(named: "photo.jpg"), forState: .Normal)
-        photoBtn.addTarget(self, action: #selector(TabBarViewController.photoAction), forControlEvents: .TouchUpInside)
-        blackView.addSubview(photoBtn)
+        photoBtn = UIButton(type: .Custom)
+        photoBtn!.frame = CGRectMake(100, 200, 100, 100)
+        photoBtn!.setBackgroundImage(UIImage(named: "photo.jpg"), forState: .Normal)
+        photoBtn!.addTarget(self, action: #selector(TabBarViewController.photoAction), forControlEvents: .TouchUpInside)
+        blackView.addSubview(photoBtn!)
         
-        let liveBtn = UIButton(type: .Custom)
-        liveBtn.frame = CGRectMake(240, 200, 100, 100)
-        liveBtn.setBackgroundImage(UIImage(named: "live.jpg"), forState: .Normal)
-        liveBtn.addTarget(self, action: #selector(TabBarViewController.liveAction), forControlEvents: .TouchUpInside)
-        blackView.addSubview(liveBtn)
+         liveBtn = UIButton(type: .Custom)
+        liveBtn!.frame = CGRectMake(240, 200, 100, 100)
+        liveBtn!.setBackgroundImage(UIImage(named: "live.jpg"), forState: .Normal)
+        liveBtn!.addTarget(self, action: #selector(TabBarViewController.liveAction), forControlEvents: .TouchUpInside)
+        blackView.addSubview(liveBtn!)
 
         
-        let videoBtn = UIButton(type: .Custom)
-        videoBtn.frame = CGRectMake(150, 350, 100, 100)
-        videoBtn.setBackgroundImage(UIImage(named: "video.jpg"), forState: .Normal)
-        videoBtn.addTarget(self, action: #selector(TabBarViewController.videoAction), forControlEvents: .TouchUpInside)
-        blackView.addSubview(videoBtn)
-
+        videoBtn = UIButton(type: .Custom)
+        videoBtn!.frame = CGRectMake(150, 350, 100, 100)
+        videoBtn!.setBackgroundImage(UIImage(named: "video.jpg"), forState: .Normal)
+        videoBtn!.addTarget(self, action: #selector(TabBarViewController.videoAction), forControlEvents: .TouchUpInside)
+             blackView.addSubview(videoBtn!)
+ self.view.addSubview(blackView)
+       
+            UIView.animateWithDuration(1) {
+                self.blackView.frame = CGRectMake(0, 64, UIScreen.mainScreen().bounds.size.width, UIScreen.mainScreen().bounds.size.height-108)
+            }
         
+   
         
-        
-        
-        self.view.addSubview(blackView)
+       
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        blackView.removeFromSuperview()
+
+        UIView.animateWithDuration(1) {
+            self.blackView.frame = CGRectMake(0, UIScreen.mainScreen().bounds.size.height, UIScreen.mainScreen().bounds.size.width, UIScreen.mainScreen().bounds.size.height-108)
+        }
+
+        
+       
     }
     func photoAction() {
         print("photo")
