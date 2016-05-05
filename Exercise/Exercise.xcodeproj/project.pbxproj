@@ -15,6 +15,8 @@
 		39AD450C1CDAD6D900642308 /* ExerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AD450B1CDAD6D900642308 /* ExerciseTests.swift */; };
 		39AD45171CDAD6D900642308 /* ExerciseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AD45161CDAD6D900642308 /* ExerciseUITests.swift */; };
 		39AD45251CDAD7C500642308 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AD45241CDAD7C500642308 /* TabBarViewController.swift */; };
+		3EB0F3E41CDAE44700239E9E /* DynamicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB0F3E21CDAE44700239E9E /* DynamicTableViewCell.swift */; };
+		3EB0F3E51CDAE44700239E9E /* DynamicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EB0F3E31CDAE44700239E9E /* DynamicTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		39AD45161CDAD6D900642308 /* ExerciseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseUITests.swift; sourceTree = "<group>"; };
 		39AD45181CDAD6D900642308 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39AD45241CDAD7C500642308 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		3EB0F3E21CDAE44700239E9E /* DynamicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicTableViewCell.swift; sourceTree = "<group>"; };
+		3EB0F3E31CDAE44700239E9E /* DynamicTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DynamicTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				39AD44F61CDAD6D900642308 /* AppDelegate.swift */,
 				39AD44F81CDAD6D900642308 /* ViewController.swift */,
 				39AD45241CDAD7C500642308 /* TabBarViewController.swift */,
+				3EB0F3E21CDAE44700239E9E /* DynamicTableViewCell.swift */,
+				3EB0F3E31CDAE44700239E9E /* DynamicTableViewCell.xib */,
 				39AD44FA1CDAD6D900642308 /* Main.storyboard */,
 				39AD44FD1CDAD6D900642308 /* Assets.xcassets */,
 				39AD44FF1CDAD6D900642308 /* LaunchScreen.storyboard */,
@@ -232,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39AD45011CDAD6D900642308 /* LaunchScreen.storyboard in Resources */,
+				3EB0F3E51CDAE44700239E9E /* DynamicTableViewCell.xib in Resources */,
 				39AD44FE1CDAD6D900642308 /* Assets.xcassets in Resources */,
 				39AD44FC1CDAD6D900642308 /* Main.storyboard in Resources */,
 			);
@@ -259,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39AD44F91CDAD6D900642308 /* ViewController.swift in Sources */,
+				3EB0F3E41CDAE44700239E9E /* DynamicTableViewCell.swift in Sources */,
 				39AD45251CDAD7C500642308 /* TabBarViewController.swift in Sources */,
 				39AD44F71CDAD6D900642308 /* AppDelegate.swift in Sources */,
 			);
@@ -487,6 +495,7 @@
 				39AD451D1CDAD6D900642308 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		39AD451E1CDAD6D900642308 /* Build configuration list for PBXNativeTarget "ExerciseTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +504,7 @@
 				39AD45201CDAD6D900642308 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		39AD45211CDAD6D900642308 /* Build configuration list for PBXNativeTarget "ExerciseUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +513,7 @@
 				39AD45231CDAD6D900642308 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
