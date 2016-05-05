@@ -21,6 +21,8 @@
 		39AD45331CDAE96700642308 /* LiveCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AD45321CDAE96700642308 /* LiveCollectionViewController.swift */; };
 		39AD45361CDAE9C200642308 /* LiveCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AD45341CDAE9C200642308 /* LiveCollectionViewCell.swift */; };
 		39AD45371CDAE9C200642308 /* LiveCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39AD45351CDAE9C200642308 /* LiveCollectionViewCell.xib */; };
+		3EB0F3E41CDAE44700239E9E /* DynamicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB0F3E21CDAE44700239E9E /* DynamicTableViewCell.swift */; };
+		3EB0F3E51CDAE44700239E9E /* DynamicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EB0F3E31CDAE44700239E9E /* DynamicTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,9 @@
 		39AD45321CDAE96700642308 /* LiveCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveCollectionViewController.swift; sourceTree = "<group>"; };
 		39AD45341CDAE9C200642308 /* LiveCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveCollectionViewCell.swift; sourceTree = "<group>"; };
 		39AD45351CDAE9C200642308 /* LiveCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LiveCollectionViewCell.xib; sourceTree = "<group>"; };
+
+		3EB0F3E21CDAE44700239E9E /* DynamicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicTableViewCell.swift; sourceTree = "<group>"; };
+		3EB0F3E31CDAE44700239E9E /* DynamicTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DynamicTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +125,9 @@
 				39AD45261CDAE1E800642308 /* photo.jpg */,
 				39AD45281CDAE1ED00642308 /* live.jpg */,
 				39AD452A1CDAE1F100642308 /* video.jpg */,
+
+				3EB0F3E21CDAE44700239E9E /* DynamicTableViewCell.swift */,
+				3EB0F3E31CDAE44700239E9E /* DynamicTableViewCell.xib */,
 				39AD44FA1CDAD6D900642308 /* Main.storyboard */,
 				39AD44FD1CDAD6D900642308 /* Assets.xcassets */,
 				39AD44FF1CDAD6D900642308 /* LaunchScreen.storyboard */,
@@ -253,6 +261,7 @@
 				39AD45011CDAD6D900642308 /* LaunchScreen.storyboard in Resources */,
 				39AD452B1CDAE1F100642308 /* video.jpg in Resources */,
 				39AD45291CDAE1ED00642308 /* live.jpg in Resources */,
+				3EB0F3E51CDAE44700239E9E /* DynamicTableViewCell.xib in Resources */,
 				39AD44FE1CDAD6D900642308 /* Assets.xcassets in Resources */,
 				39AD45271CDAE1E800642308 /* photo.jpg in Resources */,
 				39AD44FC1CDAD6D900642308 /* Main.storyboard in Resources */,
@@ -283,6 +292,7 @@
 				39AD45331CDAE96700642308 /* LiveCollectionViewController.swift in Sources */,
 				39AD45361CDAE9C200642308 /* LiveCollectionViewCell.swift in Sources */,
 				39AD44F91CDAD6D900642308 /* ViewController.swift in Sources */,
+				3EB0F3E41CDAE44700239E9E /* DynamicTableViewCell.swift in Sources */,
 				39AD45251CDAD7C500642308 /* TabBarViewController.swift in Sources */,
 				39AD44F71CDAD6D900642308 /* AppDelegate.swift in Sources */,
 			);
@@ -511,6 +521,7 @@
 				39AD451D1CDAD6D900642308 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		39AD451E1CDAD6D900642308 /* Build configuration list for PBXNativeTarget "ExerciseTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +530,7 @@
 				39AD45201CDAD6D900642308 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		39AD45211CDAD6D900642308 /* Build configuration list for PBXNativeTarget "ExerciseUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +539,7 @@
 				39AD45231CDAD6D900642308 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

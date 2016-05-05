@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--动态-->
@@ -16,13 +17,49 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MLa-WY-Khk">
+                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="8w4-tV-Jtl"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MLa-WY-Khk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="4mU-Hn-N8g"/>
+                            <constraint firstItem="MLa-WY-Khk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="j7G-qq-DLM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MLa-WY-Khk" secondAttribute="trailing" constant="-20" id="nKC-lM-PHm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MLa-WY-Khk" secondAttribute="bottom" id="pXy-RK-XoC"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="a64-Ls-f0N"/>
+                    <navigationItem key="navigationItem" id="a64-Ls-f0N">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="icD-VI-1gi">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="p5M-kE-MUO">
+                                <rect key="frame" x="20" y="7" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.50990912560000001" blue="0.4212480629" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="rVU-i2-3bA">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uXT-tX-CEe">
+                                <rect key="frame" x="302" y="7" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="动态"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="leftBtn" destination="p5M-kE-MUO" id="FHT-CZ-CuI"/>
+                        <outlet property="rightBtn" destination="uXT-tX-CEe" id="C2A-OI-Mfr"/>
+                        <outlet property="tableView" destination="MLa-WY-Khk" id="8xn-Xy-1Ag"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1117" y="429"/>
+            <point key="canvasLocation" x="966" y="410"/>
         </scene>
         <!--动态-->
         <scene sceneID="b8v-3F-x80">
@@ -41,7 +78,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TQX-JM-48n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1286" y="1072"/>
+            <point key="canvasLocation" x="1040" y="1097"/>
         </scene>
         <!--Live Collection View Controller-->
         <scene sceneID="hB6-fI-8qp">
