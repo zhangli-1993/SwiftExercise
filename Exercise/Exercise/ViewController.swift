@@ -79,21 +79,21 @@ class ViewController: UIViewController, UITableViewDataSource, UICollectionViewD
 
         if tag == 2 {
             leftView.center = CGPointMake(90, self.view.frame.size.height/2)
-            collection!.center = CGPointMake(self.view.frame.size.width/2 + 180, self.view.frame.size.height/2)
+            collection!.frame = CGRectMake(180, 64, UIScreen.mainScreen().bounds.size.width, UIScreen.mainScreen().bounds.size.height-110)
             if self.leftBtn.tag % 2 == 1 {
                 leftView.center = CGPointMake(-90, self.view.frame.size.height/2)
-                collection!.center = CGPointMake(self.view.frame.size.width/2, self.view.frame.size.height/2)
+                collection!.frame = CGRectMake(0, 64, UIScreen.mainScreen().bounds.size.width, UIScreen.mainScreen().bounds.size.height-110)
             }
 
         } else {
 
         if self.leftBtn.tag % 2 == 0 {
             leftView.center = CGPointMake(90, self.view.frame.size.height/2)
-            self.tableView.center = CGPointMake(self.view.frame.size.width/2 + 180, self.view.frame.size.height/2)
+            self.tableView.frame = CGRectMake(180, 0, UIScreen.mainScreen().bounds.size.width, UIScreen.mainScreen().bounds.size.height)
             
         } else {
               leftView.center = CGPointMake(-90, self.view.frame.size.height/2)
-            self.tableView.center = CGPointMake(self.view.frame.size.width/2, self.view.frame.size.height/2)
+            self.tableView.frame = CGRectMake(0, 0, UIScreen.mainScreen().bounds.size.width, UIScreen.mainScreen().bounds.size.height)
  
         }
     }
@@ -115,9 +115,9 @@ class ViewController: UIViewController, UITableViewDataSource, UICollectionViewD
 
 
         if tag == 2 {
-            collection!.center = CGPointMake(self.view.frame.size.width/2, self.view.frame.size.height/2)
+            collection!.frame = CGRectMake(0, 64, UIScreen.mainScreen().bounds.size.width, UIScreen.mainScreen().bounds.size.height-110)
         } else {
-        self.tableView.center = CGPointMake(self.view.frame.size.width/2, self.view.frame.size.height/2)
+        self.tableView.frame = CGRectMake(0, 0, UIScreen.mainScreen().bounds.size.width, UIScreen.mainScreen().bounds.size.height)
         }
         LeftView.setAnimationCurve(UIViewAnimationCurve.EaseOut)
         LeftView.commitAnimations()
