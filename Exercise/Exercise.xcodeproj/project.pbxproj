@@ -14,6 +14,7 @@
 		39AD45011CDAD6D900642308 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39AD44FF1CDAD6D900642308 /* LaunchScreen.storyboard */; };
 		39AD450C1CDAD6D900642308 /* ExerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AD450B1CDAD6D900642308 /* ExerciseTests.swift */; };
 		39AD45171CDAD6D900642308 /* ExerciseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AD45161CDAD6D900642308 /* ExerciseUITests.swift */; };
+		39AD45251CDAD7C500642308 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AD45241CDAD7C500642308 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		39AD45121CDAD6D900642308 /* ExerciseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExerciseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39AD45161CDAD6D900642308 /* ExerciseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseUITests.swift; sourceTree = "<group>"; };
 		39AD45181CDAD6D900642308 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39AD45241CDAD7C500642308 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				39AD44F61CDAD6D900642308 /* AppDelegate.swift */,
 				39AD44F81CDAD6D900642308 /* ViewController.swift */,
+				39AD45241CDAD7C500642308 /* TabBarViewController.swift */,
 				39AD44FA1CDAD6D900642308 /* Main.storyboard */,
 				39AD44FD1CDAD6D900642308 /* Assets.xcassets */,
 				39AD44FF1CDAD6D900642308 /* LaunchScreen.storyboard */,
@@ -256,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39AD44F91CDAD6D900642308 /* ViewController.swift in Sources */,
+				39AD45251CDAD7C500642308 /* TabBarViewController.swift in Sources */,
 				39AD44F71CDAD6D900642308 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
