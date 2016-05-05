@@ -13,6 +13,7 @@ var blackView = UIView()
     var liveBtn : UIButton?
     var photoBtn : UIButton?
     var videoBtn : UIButton?
+    var tag = 1
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -71,10 +72,19 @@ var blackView = UIView()
         videoBtn!.addTarget(self, action: #selector(TabBarViewController.videoAction), forControlEvents: .TouchUpInside)
              blackView.addSubview(videoBtn!)
  self.view.addSubview(blackView)
-       
+        if tag == 1 {
             UIView.animateWithDuration(1) {
                 self.blackView.frame = CGRectMake(0, 64, UIScreen.mainScreen().bounds.size.width, UIScreen.mainScreen().bounds.size.height-108)
             }
+            tag = 2
+
+        }else{
+            UIView.animateWithDuration(1) {
+                self.blackView.frame = CGRectMake(0, UIScreen.mainScreen().bounds.size.height, UIScreen.mainScreen().bounds.size.width, UIScreen.mainScreen().bounds.size.height-108)
+            }
+            tag = 1
+
+        }
         
    
         
@@ -87,7 +97,7 @@ var blackView = UIView()
             self.blackView.frame = CGRectMake(0, UIScreen.mainScreen().bounds.size.height, UIScreen.mainScreen().bounds.size.width, UIScreen.mainScreen().bounds.size.height-108)
         }
 
-        
+        tag = 1
        
     }
     func photoAction() {
