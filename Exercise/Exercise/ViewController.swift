@@ -37,7 +37,7 @@ class ViewController: UIViewController, UITableViewDataSource, UICollectionViewD
     
     @IBOutlet weak var tableView: UITableView!
 
-    var leftView: LeftView = LeftView()
+    var leftView: LeftView!
     
    
     override func viewDidLoad() {
@@ -45,9 +45,9 @@ class ViewController: UIViewController, UITableViewDataSource, UICollectionViewD
         let cellNib: UINib = UINib(nibName: "DynamicTableViewCell", bundle: nil)
         self.tableView.registerNib(cellNib, forCellReuseIdentifier: "cell")
         self.tableView.rowHeight = 224
-        self.leftView.frame = CGRectMake(-180, 0, 180, self.view.frame.size.height)
-        self.leftView.backgroundColor = UIColor.grayColor()
-        self.view.addSubview(leftView)
+        leftView = LeftView.init(frame: CGRectMake(-180, 0, 180, self.view.frame.size.height))
+        
+        self.view.addSubview(leftView!)
         self.leftBtn.tag = 100
         let swipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(ViewController.handleSwipeGesture(_:)))
         swipeGesture.direction = UISwipeGestureRecognizerDirection.Left
@@ -78,21 +78,21 @@ class ViewController: UIViewController, UITableViewDataSource, UICollectionViewD
         LeftView.setAnimationDuration(0.5)
 
         if tag == 2 {
-            leftView.center = CGPointMake(90, self.view.frame.size.height/2)
+            leftView!.center = CGPointMake(90, self.view.frame.size.height/2)
             collection!.frame = CGRectMake(180, 64, UIScreen.mainScreen().bounds.size.width, UIScreen.mainScreen().bounds.size.height-110)
             if self.leftBtn.tag % 2 == 1 {
-                leftView.center = CGPointMake(-90, self.view.frame.size.height/2)
+                leftView!.center = CGPointMake(-90, self.view.frame.size.height/2)
                 collection!.frame = CGRectMake(0, 64, UIScreen.mainScreen().bounds.size.width, UIScreen.mainScreen().bounds.size.height-110)
             }
 
         } else {
 
         if self.leftBtn.tag % 2 == 0 {
-            leftView.center = CGPointMake(90, self.view.frame.size.height/2)
+            leftView!.center = CGPointMake(90, self.view.frame.size.height/2)
             self.tableView.frame = CGRectMake(180, 0, UIScreen.mainScreen().bounds.size.width, UIScreen.mainScreen().bounds.size.height)
             
         } else {
-              leftView.center = CGPointMake(-90, self.view.frame.size.height/2)
+              leftView!.center = CGPointMake(-90, self.view.frame.size.height/2)
             self.tableView.frame = CGRectMake(0, 0, UIScreen.mainScreen().bounds.size.width, UIScreen.mainScreen().bounds.size.height)
  
         }
@@ -111,7 +111,7 @@ class ViewController: UIViewController, UITableViewDataSource, UICollectionViewD
     func handleSwipeGesture(sender: UISwipeGestureRecognizer){
         LeftView.beginAnimations(nil, context: nil)
         LeftView.setAnimationDuration(1.0)
-        leftView.center = CGPointMake(-90, self.view.frame.size.height/2)
+        leftView!.center = CGPointMake(-90, self.view.frame.size.height/2)
 
 
         if tag == 2 {

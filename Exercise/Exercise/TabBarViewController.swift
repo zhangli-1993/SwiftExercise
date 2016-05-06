@@ -108,6 +108,7 @@ var blackView = UIView()
             picker.sourceType = UIImagePickerControllerSourceType.Camera
             //允许编辑
             picker.allowsEditing = true
+        
             //打开相机
             self.presentViewController(picker, animated: true, completion: {
                 () -> Void in
