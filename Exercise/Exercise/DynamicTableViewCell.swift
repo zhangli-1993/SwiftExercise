@@ -28,7 +28,6 @@ class DynamicTableViewCell: UITableViewCell {
         super.layoutSubviews()
         self.headPortrait.layer.cornerRadius = 40
         self.headPortrait.clipsToBounds = true
-//        self.likeButton.setImage(UIImage(named:"", forState:.Normal)
         
     }
     

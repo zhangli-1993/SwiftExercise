@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TabBarViewController: UITabBarController {
+class TabBarViewController: UITabBarController, UIPickerViewDelegate, UINavigationControllerDelegate{
 var blackView = UIView()
     var liveBtn : UIButton?
     var photoBtn : UIButton?
@@ -102,7 +102,37 @@ var blackView = UIView()
     }
     func photoAction() {
         print("photo")
+        if UIImagePickerController.isSourceTypeAvailable(.Camera) {
+            let picker = UIImagePickerController()
+            
+            picker.sourceType = UIImagePickerControllerSourceType.Camera
+            //允许编辑
+            picker.allowsEditing = true
+            //打开相机
+            self.presentViewController(picker, animated: true, completion: {
+                () -> Void in
+            })
+        }else{
+            print("找不到相机")
+        }
+        
     }
+    
+    //选择图片成功后代理
+    func imagePickerController(picker: UIImagePickerController,
+                               didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        //查看info对象
+        print(info)
+        //获取选择的原图
+        let image = info[UIImagePickerControllerOriginalImage] as! UIImage
+       
+        //图片控制器退出
+        picker.dismissViewControllerAnimated(true, completion: {
+            () -> Void in
+        })
+    }
+    
+    
     func liveAction() {
         print("live")
     }
